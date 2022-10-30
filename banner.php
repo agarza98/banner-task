@@ -21,7 +21,6 @@ function x()
                 echo "ERROR: Could not able to execute $updateSql. " . mysqli_error($link);
             }
         } else {
-            echo 'asdfasdfasdf';
             $insertSql = "INSERT INTO banners (ip_address, user_agent, view_date,page_url,view_count)
         VALUES ('$ip_address','$userAgent','$date','$page_url','1')";
             if (!mysqli_query($link, $insertSql)) {
